@@ -20,7 +20,7 @@ Created: Colorlib
 4.  Hero Section
 5.  Service Section
 6.  Categories Section
-7.  Featured Section
+7.  Featured Section회원가입
 8.  Latest Product Section
 9.  Contact
 10.  Footer Style
@@ -30,7 +30,45 @@ Created: Colorlib
 /* Template default CSS
 /*----------------------------------------*/
 
+.product-name {
+    margin-left: 10px;
+}
+.shoping__checkout__parents{
+	margin-right: 0px;
+	
+}
 
+.checkout__input {
+	text-align: center;
+}
+
+.checkout__input .site-btn {
+	display: inline-block;
+	border-radius: 10%;
+}
+
+.site-btn-join{
+	width: 200%;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #7fad39;
+	border: none;
+	/*	position: fixed;
+	left: 10px; */
+	
+}
+.join__title{
+	text-align: center;
+}
+
+.check_row{
+	display: flex;
+    justify-content: center;
+}
 
 .home-main-title{
 	background-color: #f5f5f5;
@@ -277,7 +315,9 @@ ol {
 -----------------------*/
 
 .header__top {
-	background: #f5f5f5;
+	background-image: url('../img/test/leaf.png') ;
+
+	/* background: #f5f5f5; */
 }
 
 .header__top__left {
@@ -301,6 +341,10 @@ ol {
 	background: #000000;
 	opacity: 0.1;
 	content: "";
+}
+.header{
+	
+	background-image: url('../img/test/leaf.png') ;
 }
 
 .header__top__left ul li:last-child {
@@ -442,7 +486,7 @@ ol {
 }
 
 .header__menu {
-	padding: 24px 0;
+	padding: 60px 0;
 }
 
 .header__menu ul li {
@@ -520,7 +564,7 @@ ol {
 
 .header__cart {
 	text-align: right;
-	padding: 24px 0;
+	padding: 50px 0;
 }
 
 .header__cart ul {
@@ -1080,14 +1124,14 @@ ol {
 
 .breadcrumb__text h2 {
 	font-size: 46px;
-	color: #ffffff;
+	color: #570c3e;
 	font-weight: 700;
 }
 
 .breadcrumb__option a {
 	display: inline-block;
 	font-size: 16px;
-	color: #ffffff;
+	color: #570c3e;
 	font-weight: 700;
 	margin-right: 20px;
 	position: relative;
@@ -1099,14 +1143,14 @@ ol {
 	top: 13px;
 	height: 1px;
 	width: 10px;
-	background: #ffffff;
+	background: #570c3e;
 	content: "";
 }
 
 .breadcrumb__option span {
 	display: inline-block;
 	font-size: 16px;
-	color: #ffffff;
+	color: #570c3e;
 }
 
 /*---------------------
@@ -2127,12 +2171,17 @@ ol {
 	color: #999999;
 }
 
+
+
 .checkout__form h4 {
 	color: #1c1c1c;
 	font-weight: 700;
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid #4e4e4e;
+	width: 600px;
 	padding-bottom: 20px;
 	margin-bottom: 25px;
+	display: inline-block;
+	text-align: center;
 }
 
 .checkout__form p {
@@ -2155,7 +2204,7 @@ ol {
 .checkout__input input {
 	width: 100%;
 	height: 46px;
-	border: 1px solid #ebebeb;
+	border: 1px solid #c4c4c4;
 	padding-left: 20px;
 	font-size: 16px;
 	color: #b2b2b2;
@@ -2167,7 +2216,7 @@ ol {
 }
 
 .checkout__input input::placeholder {
-	color: #b2b2b2;
+	color: #222;
 }
 
 .checkout__input__checkbox {
