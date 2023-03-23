@@ -10,6 +10,16 @@
 'use strict';
 
 (function ($) {
+
+    //summernote
+    $(document).ready(function() {
+        $('.summernote').summernote({
+            height: 150,
+            lang: "ko-KR"
+        });
+    });
+
+
     // checkbox All 
     $(document).ready(function() {
         $("#cbx_chkAll").click(function() {

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
+    <link rel="stylesheet" href="css/summernote/summernote-lite.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -21,6 +22,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+
 </head>
 
 <body>
@@ -115,7 +119,7 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     <div class="background-page">
-                        <div class="breadcrumb__text"><h2>로그인</h2></div>
+                        <div class="breadcrumb__text"><h2>문의사항</h2></div>
                     </div>
                 </div>
                 
@@ -125,52 +129,104 @@
         </div>
     </section>
 
-    <!-- Checkout Section Begin -->
-    <section class="checkout spad">
+    <!--  -->
+     <!-- Checkout Section Begin -->
+     <section class="checkout spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <h6><span class="icon_tag_alt"></span> Have a coupon? <a href="#">Click here</a> to enter your code
+                    </h6>
                 </div>
             </div>
             <div class="checkout__form">
-                <div class="row">
-                <h4 class="join__title mx-auto">로그인</h4>
-                </div>
-                <h3>&nbsp;</h3>
+                <h4>Billing Details</h4>
                 <form action="#">
-                    <div class="row" id="check_row">                       
-                        <div class="col-lg-7 col-md-6 mx-auto">                           
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">                                        
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">                                        
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="checkout__input">
-                                <!-- <p>ID<span>*</span></p> -->
-                                <input type="text" placeholder="ID" class="checkout__input__add">                                
-                            </div>                                                                          
+                                <p>Country<span>*</span></p>
+                                <input type="text">
+                            </div>
                             <div class="checkout__input">
-                                <!-- <p>PW<span>*</span></p> -->
-                                <input type="text" placeholder="PW" class="checkout__input__add">
-                                <div class="checkout__input__checkbox">
-                                    <label for="acc">                                    
-                                                Remember ID?
-                                        <input type="checkbox" id="acc">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>                                                                           
-                            <h3>&nbsp;</h3>
-                                <button type="submit" class="site-btn">ID 찾기</button>                                                     
-                                <button type="submit" class="site-btn">PW 찾기</button>                                                     
-                                <button type="submit" class="site-btn">로그인</button>                                                     
-                            </div> 
+                                <p>Address<span>*</span></p>
+                                <input type="text" placeholder="Street Address" class="checkout__input__add">
+                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Town/City<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Country/State<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Postcode / ZIP<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Phone<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="acc">
+                                    Create an account?
+                                    <input type="checkbox" id="acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <p>Create an account by entering the information below. If you are a returning customer
+                                please login at the top of the page</p>
+                            <div class="checkout__input">
+                                <p>Account Password<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="diff-acc">
+                                    Ship to a different address?
+                                    <input type="checkbox" id="diff-acc">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Order notes<span>*</span></p>
+                                <input type="text"
+                                    placeholder="Notes about your order, e.g. special notes for delivery.">
+                            </div>
                         </div>
-                    </div>                    
+                       
+                    </div>
                 </form>
             </div>
         </div>
     </section>
-
-    
-    
-
-    
     <!-- Checkout Section End -->
+    
+    
+
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -249,6 +305,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- summernote -->
+    <script src="js/summernote/summernote-lite.js"></script>
+    <script src="js/summernote/lang/summernote-ko-KR.js"></script>
 
 
 
